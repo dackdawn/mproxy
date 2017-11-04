@@ -299,7 +299,7 @@ int extract_host(const char * header)
 	    	if(r_flag)		//有-m标记
 	    	{
 		    	strncpy(remote_host, r_h, strlen(r_h));
-				remote[strlen(r_h)] = '\0';
+				remote_host[strlen(r_h)] = '\0';
 		    	remote_port = r_p;
 		    	return 0;
 	    	}else 
